@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		//1. 打印99乘法表
+		document.write('<table border="1" cellpadding="8" cellspacing="1">');
+			for(var i=1;i<=9;i++){
+				//控制行
+				document.write('<tr>');
+					for(var j=1;j<=i;j++){
+						document.write('<td>');
+							document.write(i+'x'+j+'='+i*j);
+						document.write('</td>');
+					}
+				document.write('</tr>');
+
+			}
+		document.write('</table>');
+
+		//2. 打印正方形
+		for(var i=1;i<=10;i++){
+			//外层循环，控制行
+			for(var j=1;j<=10;j++){
+				document.write('★');
+			}
+			//换行
+			document.write('<br>');
+		}
+
+		//3. 打印直角三角形
+		// for(var i=1;i<=10;i++){
+		// 	//外层循环，控制行
+		// 	for(var j=1;j<=i;j++){
+		// 		document.write('▲');
+		// 	}
+		// 	//换行
+		// 	document.write('<br>');
+		// }
+
+		// 4.求200-300之间所有奇数之和，用continue实现
+		// var sum=0;
+		// for(var i=200;i<=300;i++){
+		// 	if(i % 2 === 0){				
+		// 		continue;
+		// 	}
+		// 	sum += i;
+		// 	console.log(sum);
+		// }
+		
+		// 5.求200-300之间第一个能被7整除的数
+		// for(var i=200;i<=300;i++){
+		// 	if(i % 7 === 0){				
+		// 		console.log(i);
+		// 		break;
+		// 	} 
+			
+		// } 
+		
+		//6.任意输入一个整数，求它的位数
+		
+		// 可能值 NaN 整数
+		// var number = parseInt(prompt('请输入数字'));
+		// if(number){
+		// 	//求整数的位数
+		// 	var i = 1;//计算的位数
+		// 	while(number >= 10){
+		// 		number = parseInt(number / 10);
+		// 		i++;
+		// 	}
+		// 	console.log(i);
+		// }else if(number === 0){
+		// 	console.log('1');
+		// }else{
+		// 	console.log('请输入数字');
+		// }
+		// 分析：
+		// var number = 123; 
+		// var i = 1;
+		// while(number >= 10){
+		// 	number = parseInt(number / 10);
+		// 	i++;
+		// }
+		// console.log(i);				
+
+		//7.判断用户输入的数字是否合法 翻转输出每一个数字
+		
+		// var number = Number(prompt('请输入一个数字'));
+		// //整数 0 NaN
+		// if (number){
+		// 	number = parseInt(number);
+		// 	//翻转输出每一个数字
+		// 	do{
+		// 		var tmp = number % 10;
+		// 		number = parseInt (number /10);
+		// 		console.log(tmp);
+		// 	}while(number !=0 );
+		// }else if(number === 0){
+		// 	console.log('0');
+		// }else{
+		// 	console.log('玩坏了');
+		// }
+		// 
+		// 输出数组中最大数及其index和最小数及其index
+		// var arr = [25,46,789,56,5,6];
+		// var max = arr[0];
+		// var maxIndex = 0;
+		// var min = arr[0];
+		// var minIndex = 0;
+
+		// for(var i=0;i<arr.length;i++){
+		// 	if(max < arr[i]){
+		// 		max = arr[i];
+		// 		maxIndex = i;
+		// 	}
+		// 	if(min > arr[i]){
+		// 		min = arr[i];
+		// 		minIndex = i;
+		// 	}
+		// }
+		// console.log(max);
+		// console.log(maxIndex);
+		// console.log(min);
+		// console.log(minIndex);
+		//
+		// 法一: 
+		// do{
+		// 	var msg = prompt ("你到底爱不爱我？(y/n)");
+		// 	if(msg === 'y') {
+		// 		console.log("我们形影不离");
+		// 		break;
+		// 	}
+		// } while (true);
+
+		// 法二：
+		// do{
+		// 	var msg = prompt('你到底爱不爱我？(y/n)');
+		// 	if(msg ==='y'){
+		// 		console.log("我们形影不离");
+		// 	}
+		// }while (msg !='y');
+		// 
+		//  
+
+		
+		
+		
+	</script>
+</head>
+<body>
+</body>
+</html>
